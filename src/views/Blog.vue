@@ -4,7 +4,8 @@
     <!-- <button @click="consumirApi">Consumir api</button> -->
     <div v-if="articles">
       <div v-for="article in articles" :key="article.id">
-        {{article.title}}
+        <router-link :to="`/article/${article.id}`" > {{article.title}} </router-link>
+        
       </div>
     </div>
   </div>
