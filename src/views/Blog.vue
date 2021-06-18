@@ -1,10 +1,17 @@
 <template>
-  <h1>blog</h1>
+  <div class="blog">
+    <Titulo texto="Titulo de mi blog" />
+  </div>
 </template>
 
 <script>
-export default {
 
+import Titulo from '../components/Titulo.vue';
+
+export default {
+  components: {
+    Titulo
+  }
 }
 </script>
 
